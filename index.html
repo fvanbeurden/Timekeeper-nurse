@@ -308,7 +308,11 @@
                 list.innerHTML = '<p style="color:#999;font-size:0.9rem;">No entries yet.</p>';
                 return;
             }
-            list.innerHTML = entries.map((e, i) => `
+            // Iterate newest-first (reverse index order), but pass original index to edit/delete
+            list.innerHTML = entries.map((e, i) => ({ e, i }))
+                .slice()
+                .reverse()
+                .map(({ e, i }) => `
                 <div class="log-entry">
                     <div class="log-entry-header">
                         <div>
