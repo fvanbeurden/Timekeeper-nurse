@@ -97,7 +97,8 @@
     </style>
 </head>
 <body>
-    <h1>🩺 Medication Round Timer</h1>
+    <h1>Alphatron Medical</h1>
+    <h2>🩺 Medication Round Timer</h2>
 
     <div class="section">
         <div class="timer-display" id="timerDisplay">00:00:00</div>
@@ -116,13 +117,14 @@
         <div class="field-group">
             <label>Activity</label>
             <select id="activitySelect" onchange="onActivityChange()">
-                <option value="Medication Administration">Medication Administration</option>
-                <option value="Patient Assessment (Talk)">Patient Assessment (Talk)</option>
+                <option value="Patient care">Patient care</option>
                 <option value="Vital Measurements">Vital Measurements</option>
+                <option value="Medication Administration">Medication Administration</option>
                 <option value="Documentation">Documentation</option>
-                <option value="Cleaning">Cleaning</option>
+                <option value="Locating medication">Locating medication</option>
+                <option value="Locating equipment">Locating equipment</option>
                 <option value="IT Issues">IT Issues</option>
-                <option value="Medication Missing">Medication Missing</option>
+                <option value="Waiting">Waiting</option>
                 <option value="__custom__">Custom…</option>
             </select>
             <input type="text" id="customActivity" class="custom-activity-input hidden" placeholder="Enter custom activity…">
