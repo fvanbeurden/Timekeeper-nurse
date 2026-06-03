@@ -19,6 +19,23 @@
             padding: 16px;
             padding-bottom: 32px;
         }
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .app-header img {
+            height: 36px;
+            width: auto;
+            flex-shrink: 0;
+        }
+        .app-header h1 {
+            font-size: 1.25rem;
+            color: #333;
+            margin-bottom: 0;
+            text-align: left;
+        }
         h1 { font-size: 1.25rem; text-align: center; margin-bottom: 12px; color: #333; }
         .timer-display {
             font-size: 3rem;
@@ -97,7 +114,10 @@
     </style>
 </head>
 <body>
-    <h1>Alphatron Medical</h1>
+    <div class="app-header">
+        <img src="https://www.alphatronmedical.com/data/pam/public/Logo/alphatron_medical_rgb_680px(1).png" alt="Alphatron Medical">
+        <h1>Alphatron Medical</h1>
+    </div>
     <h1>Medication Round Timer</h1>
 
     <div class="section">
